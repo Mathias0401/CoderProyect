@@ -1,0 +1,51 @@
+.projects__grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.05fr 1fr 0.05fr;
+  grid-template-areas:
+    "header"
+    "projects__main"
+    "footer";
+}
+
+.projects__main {
+  width: 100%;
+  grid-area: projects__main;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "projects__bitmoji projects__images";
+}
+
+.projects__bitmoji {
+  grid-area: projects__bitmoji;
+  width: 20rem;
+  align-self: center;
+}
+
+.projects__images {
+  grid-area: projects__images;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.projects__placeholder {
+  width: 15rem;
+  height: 20rem;
+  background-color: #97cbb4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  border-radius: 0.5rem;
+}
+
+.projects__images a {
+  text-decoration: none;
+}

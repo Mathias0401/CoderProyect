@@ -1,0 +1,66 @@
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem auto 0.045fr;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "main__text bitmoji";
+}
+
+.main__bitmoji {
+  grid-area: bitmoji;
+  width: 45rem;
+  align-self: center;
+  border-radius: 100%;
+  border-top-right-radius: 60%;
+}
+
+.main__text {
+  grid-area: main__text;
+  width: 80%;
+  align-self: center;
+  justify-self: end;
+  font-family: "Fredericka the Great", cursive;
+}
+
+.main__networks {
+  font-size: 3rem;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.main__networks i {
+  margin-inline: 1rem;
+}
+
+.main__networks a {
+  font-size: 2rem;
+  align-self: center;
+  text-decoration: none;
+}
+
+.main__text h1 {
+  font-size: 6.5rem;
+  color: #e1625f;
+}
+
+.main__text p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.cheers {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #97cbb4;
+}

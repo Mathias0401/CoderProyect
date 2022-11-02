@@ -1,0 +1,70 @@
+.contact__grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.05fr 1fr 0.05fr;
+  grid-template-areas:
+    "header"
+    "contact__main"
+    "footer";
+}
+
+.contact__main {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "form__container contact__bitmoji";
+  justify-items: center;
+  align-items: center;
+}
+
+.contact__bitmoji {
+  grid-area: contact__bitmoji;
+  width: 20rem;
+  justify-self: left;
+  border-radius: 15rem;
+  border-top-right-radius: 2rem;
+}
+
+.contact__form__container {
+  grid-area: form__container;
+  width: 75%;
+  height: 95%;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__form__container h2 {
+  font-size: 5rem;
+}
+
+.contact__form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.block.title {
+  color: white;
+  font-size: 2rem;
+}
+
+.block {
+  color: black;
+  width: 100%;
+  height: 2rem;
+}
+
+.form__option {
+  color: black;
+}
+
+.message {
+  color: black;
+}
