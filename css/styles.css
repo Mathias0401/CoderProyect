@@ -417,7 +417,7 @@ body {
 }
 .header .header__menu ul .header__menu__item a {
   text-decoration: none;
-  color: #97cbb4;
+  color: white;
 }
 @media (max-width: 767px) {
   .header {
