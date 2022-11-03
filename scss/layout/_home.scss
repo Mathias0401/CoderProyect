@@ -1,66 +1,105 @@
-.grid-container {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 4rem auto 0.045fr;
-  grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
-}
-
-.main {
-  grid-area: main;
+.main.home {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "main__text bitmoji";
-}
+  grid-template-areas: "home__text bitmoji";
 
-.main__bitmoji {
-  grid-area: bitmoji;
-  width: 45rem;
-  align-self: center;
-  border-radius: 100%;
-  border-top-right-radius: 60%;
-}
+  .home__text {
+    grid-area: home__text;
+    width: 80%;
+    align-self: center;
+    justify-self: end;
+    font-family: "Fredericka the Great", cursive;
 
-.main__text {
-  grid-area: main__text;
-  width: 80%;
-  align-self: center;
-  justify-self: end;
-  font-family: "Fredericka the Great", cursive;
-}
+    h1 {
+      font-size: 6.5rem;
+      color: #e1625f;
+    }
 
-.main__networks {
-  font-size: 3rem;
-  margin-top: 2rem;
-  display: flex;
-}
+    p {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
 
-.main__networks i {
-  margin-inline: 1rem;
-}
+    .cheers {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #97cbb4;
+    }
 
-.main__networks a {
-  font-size: 2rem;
-  align-self: center;
-  text-decoration: none;
-}
+    .main__networks {
+      font-size: 3rem;
+      margin-top: 2rem;
+      display: flex;
 
-.main__text h1 {
-  font-size: 6.5rem;
-  color: #e1625f;
-}
+      i {
+        margin-inline: 1rem;
+      }
 
-.main__text p {
-  font-size: 2rem;
-  line-height: 2.5rem;
-}
+      a {
+        font-size: 2rem;
+        align-self: center;
+        text-decoration: none;
+      }
+    }
+  }
 
-.cheers {
-  margin-top: 1rem;
-  font-weight: bold;
-  color: #97cbb4;
+  .home__bitmoji {
+    grid-area: bitmoji;
+    width: 45rem;
+    align-self: center;
+    border-radius: 100%;
+    border-top-right-radius: 60%;
+  }
+
+  @media (max-width: 767px) {
+    & {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas:
+        "bitmoji"
+        "home__text";
+      justify-items: center;
+      align-items: center;
+      row-gap: 1rem;
+
+      .home__bitmoji {
+        width: 20rem;
+        margin: 0;
+      }
+
+      .home__text {
+        justify-self: center;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 0.5rem;
+
+        h1{
+          font-size: 3.5rem;
+        }
+
+        p{
+          font-size: 1.5rem;
+        }
+        
+        .main__networks{
+          width: 100%;
+          justify-content: space-between;
+
+          i{
+            font-size: 3.5rem;
+          }
+
+          span{
+            display: none;
+          }
+        }
+        
+      }
+
+    }
+  }
 }

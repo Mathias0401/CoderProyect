@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Mathias0401/CoderProyect#readme",
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "nodemon": "^2.0.20"
   }
 }

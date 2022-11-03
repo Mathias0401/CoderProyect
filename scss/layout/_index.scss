@@ -8,60 +8,105 @@
     "text laptop"
     "btn laptop";
   align-items: center;
+  justify-items: center;
   margin: auto;
-}
 
-.landing__text__container {
-  grid-area: text;
-  justify-self: center;
-  align-self: end;
-  display: flex;
-  flex-direction: column;
-}
+  .landing__text__container {
+    grid-area: text;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
 
-.landing__container h1 {
-  font-size: 5rem;
-  color: #e1625f;
-  font-style: italic;
-  border-bottom: dotted #e1625f 1px;
-}
+    h1 {
+      font-size: 5rem;
+      font-weight: lighter;
+      color: #e1625f;
+      font-style: italic;
+      border-bottom: dotted #e1625f 1px;
+    }
 
-.landing__btn {
-  grid-area: btn;
-  justify-self: center;
-  align-self: start;
-  background-color: #e1625f;
-  padding: 0.8rem;
-  border-radius: 1rem;
-  font-size: 2rem;
-  font-weight: 300;
-  margin-top: 5rem;
-}
+    .name {
+      display: block;
+      font-size: 6.5rem;
+      color: #97cbb4;
+      margin: 0.1rem;
+      margin-bottom: 0.1rem;
+    }
 
-.name {
-  display: block;
-  font-size: 6.5rem;
-  font-style: normal;
-  color: #97cbb4;
-  margin: 0.1rem;
-  margin-bottom: 0.1rem;
-}
+    .front {
+      border-top: dotted #e1625f 1px;
+      font-size: 1.8rem;
+      color: #e1625f;
+      font-style: italic;
+    }
 
-.front {
-  border-top: dotted #e1625f 1px;
-  font-size: 1.8rem;
-  color: #e1625f;
-  font-style: italic;
-  font-weight: bold;
-}
+    .mobile__line {
+      color: #e1625f;
+    }
+  }
 
-.mobile__line {
-  color: #e1625f;
-}
+  .landing__btn {
+    grid-area: btn;
+    align-self: start;
+    background-color: #e1625f;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 5rem;
+  }
 
-.laptopIcon {
-  grid-area: laptop;
-  font-size: 25rem;
-  text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #fff, 0 0 15px #0fa,
-    0 0 30px #0fa, 0 0 40px #0fa, 0 0 50px #0fa, 0 0 100px #0fa;
+  .laptopIcon {
+    grid-area: laptop;
+    font-size: 25rem;
+    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #fff, 0 0 15px #0fa,
+      0 0 30px #0fa, 0 0 40px #0fa, 0 0 50px #0fa, 0 0 100px #0fa;
+  }
+
+  @media (max-width: 767px) {
+    /* LANDING */
+
+    & {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3,auto);
+      grid-template-areas:
+        "laptop"
+        "text"
+        "btn";
+
+      .laptopIcon {
+        font-size: 14rem;
+      }
+
+      .landing__text__container {
+        width: 80%;
+        align-self: center;
+        row-gap: 0.5rem;
+
+        h1 {
+          font-weight: lighter;
+          font-size: 4rem;
+        }
+        .mobile__line{
+          display: block;
+          font-size: 2.5rem;
+        }
+        .name {
+          font-size: 5rem;
+        }
+        .front {
+          font-size: 1.5rem;
+          font-weight: lighter;
+        }
+      }
+
+      .landing__btn{
+        margin: 0;
+        align-self: center;
+      }
+    }
+  }
 }
