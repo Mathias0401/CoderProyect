@@ -1,4 +1,4 @@
 # CoderProject
 Project for web developer course on Coderhouse
 
-Notas Pre-entrega 2: En el index.html, cuando el mismo se visualiza desde mobile sobra height debajo, no supe arreglar esto y preferí dejar el error para poder solucionarlo cuando tenga mas conocimiento.
+Notas Pre-entrega 3: Recomiendo usar un telefóno para la vista Mobile, si bien se debería ver correctamente con el modo inspeccionar del navegador, fue desarrollado usando un teléfono como guia de previsualización y allí siempre se ha visto excelente.
