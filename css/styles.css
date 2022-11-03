@@ -414,6 +414,7 @@ body {
   list-style: none;
   font-size: 1.5rem;
   font-weight: bold;
+  color: white;
 }
 .header .header__menu ul .header__menu__item a {
   text-decoration: none;
@@ -434,10 +435,11 @@ body {
     width: 100%;
     height: auto;
     justify-content: space-evenly;
+    color: white;
   }
   .header .header__menu .header__menu__item a {
-    font-weight: lighter;
     color: white;
+    font-weight: lighter;
   }
 }
 

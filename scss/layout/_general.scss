@@ -65,6 +65,7 @@ body {
         list-style: none;
         font-size: 1.5rem;
         font-weight: bold;
+        color: white;
 
         a {
           text-decoration: none;
@@ -90,12 +91,13 @@ body {
         width: 100%;
         height: auto;
         justify-content: space-evenly;
+        color: white;
 
         .header__menu__item {
           
           a {
-            font-weight: lighter;
             color: white;
+            font-weight: lighter;
           }
         }
       }
