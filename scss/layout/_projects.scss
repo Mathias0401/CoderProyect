@@ -36,20 +36,42 @@
     }
   }
 
-  @media (max-width: 767px) {
+  /* TABLET */
 
-    .projects__bitmoji {
-      width: 9rem;
+  @media (min-width: 768px) and (max-width: 1080px) {
+    & {
+      .projects__bitmoji {
+        width: 20rem;
+      }
+      .projects__images {
+        row-gap: 1.5rem;
+        width: 100%;
+
+        .projects__placeholder {
+          width: 13rem;
+          height: 15rem;
+          font-size: 2rem;
+        }
+      }
     }
-    .projects__images {
-      row-gap: 1.5rem;
-      width: 100%;
-      
+  }
 
-      .projects__placeholder {
-        width: 7rem;
-        height: 9rem;
-        font-size: 1.5rem;
+  /* MOBILE */
+
+  @media (max-width: 767px) {
+    & {
+      .projects__bitmoji {
+        width: 9rem;
+      }
+      .projects__images {
+        row-gap: 1.5rem;
+        width: 100%;
+
+        .projects__placeholder {
+          width: 7rem;
+          height: 9rem;
+          font-size: 1.5rem;
+        }
       }
     }
   }
