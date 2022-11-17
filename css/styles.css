@@ -937,6 +937,9 @@ body {
     height: 9rem;
     font-size: 1.5rem;
   }
+  .main.projects .projects__images .projects__placeholder:hover .projectsText {
+    font-size: 0.85rem;
+  }
 }
 
 /* BOOTSTRAP STYLE FIX */
