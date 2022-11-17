@@ -20,9 +20,9 @@
     h1 {
       font-size: 5rem;
       font-weight: lighter;
-      color: #e1625f;
+      color: $template-red;
       font-style: italic;
-      border-bottom: dotted #e1625f 1px;
+      border-bottom: dotted $template-red 1px;
     }
 
     .name {
@@ -34,21 +34,21 @@
     }
 
     .front {
-      border-top: dotted #e1625f 1px;
+      border-top: dotted $template-red 1px;
       font-size: 1.8rem;
-      color: #e1625f;
+      color: $template-red;
       font-style: italic;
     }
 
     .mobile__line {
-      color: #e1625f;
+      color: $template-red;
     }
   }
 
   .landing__btn {
     grid-area: btn;
     align-self: start;
-    background-color: #e1625f;
+    background-color: $template-red;
     padding: 0.8rem;
     border-radius: 1rem;
     font-size: 2rem;

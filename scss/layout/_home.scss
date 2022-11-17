@@ -13,7 +13,7 @@
 
     h1 {
       font-size: 6.5rem;
-      color: #e1625f;
+      color: $template-red;
     }
 
     p {
@@ -24,7 +24,7 @@
     .cheers {
       margin-top: 1rem;
       font-weight: bold;
-      color: #97cbb4;
+      color: $template-green;
     }
 
     .main__networks {

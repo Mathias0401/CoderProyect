@@ -881,6 +881,7 @@ body {
   justify-content: space-evenly;
 }
 .main.projects .projects__images .projects__placeholder {
+  transition: 1s;
   width: 15rem;
   height: 20rem;
   background-color: #97cbb4;
@@ -889,8 +890,22 @@ body {
   align-items: center;
   font-size: 2rem;
   font-weight: bold;
-  color: black;
   border-radius: 0.5rem;
+}
+.main.projects .projects__images .projects__placeholder .projectsTitle {
+  color: black;
+}
+.main.projects .projects__images .projects__placeholder .projectsText {
+  display: none;
+}
+.main.projects .projects__images .projects__placeholder:hover .projectsTitle {
+  display: none;
+}
+.main.projects .projects__images .projects__placeholder:hover .projectsText {
+  color: black;
+  font-size: 1.75rem;
+  text-align: center;
+  display: block;
 }
 .main.projects .projects__images a {
   text-decoration: none;
@@ -1035,8 +1050,5 @@ body {
     font-weight: bold;
   }
 }
-
-/*** TABLET ***/
-/*** MOBILE ***/
 
 /*# sourceMappingURL=styles.css.map */

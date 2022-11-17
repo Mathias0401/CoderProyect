@@ -1,5 +1,7 @@
 @import "./base/reset";
 @import "./base/typo";
+@import "./utilities/variable";
+@import "./utilities/mixins";
 @import "./components/animations";
 @import "./layout/general";
 @import "./layout/index";
@@ -7,4 +9,3 @@
 @import "./layout/about";
 @import "./layout/projects";
 @import "./layout/contact";
-@import "./layout/queries";

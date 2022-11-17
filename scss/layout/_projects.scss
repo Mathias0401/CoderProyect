@@ -19,16 +19,39 @@
     justify-content: space-evenly;
 
     .projects__placeholder {
+      transition: 1s;
       width: 15rem;
       height: 20rem;
-      background-color: #97cbb4;
+      background-color: $template-green;
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 2rem;
       font-weight: bold;
-      color: black;
       border-radius: 0.5rem;
+
+      .projectsTitle{
+        color: black;
+      }
+
+      .projectsText{
+        display:none;
+      }
+    }
+
+    .projects__placeholder:hover {
+
+
+      .projectsTitle{
+        display: none;
+      }
+
+      .projectsText{
+        color: black;
+        font-size: 1.75rem;
+        text-align: center;
+        display:block;  
+      }
     }
 
     a {

@@ -1,0 +1,11 @@
+@mixin containerGridDesign {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content auto 0.045fr;
+  row-gap: 1.5rem;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
